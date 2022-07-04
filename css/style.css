@@ -104,31 +104,31 @@ ul {
 }
 
 .icon_website::before {
-  background-image: url(img/web.png);
+  background-image: url(../img/web.png);
 }
 
 .icon_facebook::before {
-  background-image: url(img/facebook.png);
+  background-image: url(../img/facebook.png);
 }
 
 .icon_youtube::before {
-  background-image: url(img/youtube.png);
+  background-image: url(../img/youtube.png);
 }
 
 .icon_twitter::before {
-  background-image: url(img/twitter.png);
+  background-image: url(../img/twitter.png);
 }
 
 .icon_github::before {
-  background-image: url(img/github.png);
+  background-image: url(../img/github.png);
 }
 
 .icon_medium::before {
-  background-image: url(img/medium.png);
+  background-image: url(../img/medium.png);
 }
 
 .icon_line::before {
-  background-image: url(img/line.png);
+  background-image: url(../img/line.png);
 }
 
 
@@ -150,12 +150,13 @@ ul {
   color: black;
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  /* margin-left: 10px; */
 }
 
-.header > nav {
-  margin-right: 50px;
+header.header > a:first-child {
+  margin-left: 15px;
 }
+
 
 img.logo {
   height: 20px;
@@ -163,12 +164,25 @@ img.logo {
 
 ul.menu {
   list-style-type: none;
+  margin: 0 auto;
 }
 
 ul.menu > li {
   display: inline-block;
-  margin: 15px;
+  margin: 0 15px;
+  padding-top: 30px;
   font-size: 20px;
+  text-align: center;
+  height: 60px;
+}
+
+ul.menu > li:hover {
+  border-bottom: 2px solid red;
+  height: 58px;
+}
+
+ul.menu > li:hover a {
+  color: red;
 }
 
 .cover img {
@@ -493,12 +507,12 @@ a.more:hover {
 /*  */
 
 .detail > .name::before {
-  background-image: url(img/user.png);
+  background-image: url(../img/user.png);
   filter: invert(76%) sepia(0%) saturate(3%) hue-rotate(229deg) brightness(92%) contrast(84%);
 }
 
 .level::before {
-  background-image: url(img/medal.png);
+  background-image: url(../img/medal.png);
 }
 
 .level-0 {color: limegreen;}
