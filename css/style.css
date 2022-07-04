@@ -157,6 +157,10 @@ header.header > a:first-child {
   margin-left: 15px;
 }
 
+header.header > a:first-child:hover {
+  color: red;
+}
+
 
 img.logo {
   height: 20px;
